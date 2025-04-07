@@ -91,9 +91,8 @@ class _RigistrationState extends State<Rigistration> {
                   ),
                   ElevatedButton(onPressed:(){
                     if(formkey.currentState!.validate());
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_)=> StackClass ()),
-                    );
+                   Navigator.of(context).pushNamed('routescren2');
+
 
                   } , child:Text('Login') ),
                 ],

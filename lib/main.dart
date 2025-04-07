@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_track/stack.dart';
 
+import 'Form2.dart';
 import 'Gridview.dart';
 
 main(){
@@ -11,8 +13,11 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        'routescren2':(context)=>StackClass()
+      },
       debugShowCheckedModeBanner: false,
-      home: Graidviewclass(),
+      home:Rigistration(),
 
     );
   }
