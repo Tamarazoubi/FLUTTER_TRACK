@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+
 class StackClass extends StatefulWidget {
   const StackClass({super.key});
 
@@ -11,6 +12,7 @@ class StackClass extends StatefulWidget {
 class _StackClassState extends State<StackClass> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.pink[90],
@@ -76,9 +78,11 @@ class _StackClassState extends State<StackClass> {
                                     box(Colors.grey),
 
                                   ],
+
                                 )
 
                             ),
+
                           ],
                         )
                       ],)
@@ -290,10 +294,14 @@ class _StackClassState extends State<StackClass> {
                     ]
                 )
             ),
+ElevatedButton(onPressed: (){
+
+}, child: Text("next")
 
 
+)
 
-          ]
+    ],
 
       ),
 

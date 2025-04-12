@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_track/stack.dart';
 //import 'package:lottie/lottie.dart';
 
@@ -15,6 +16,8 @@ class _RigistrationState extends State<Rigistration> {
   final formkey=GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
+    TextEditingController c=TextEditingController();
+    List userdate=['omer','cs'];
     return Scaffold(
       body: SafeArea(child:
 
@@ -29,7 +32,8 @@ class _RigistrationState extends State<Rigistration> {
                   //  Image.network('https://ouch-prod-var-cdn.icons8.com/ob/illustrations/thumbs/WRHAp9Sia49MVfiY.webp'),
                  // Lottie.network('https://lottie.host/4d0b2829-19d3-42a3-b7b5-8fb6b35c361e/JWzDLc1WTe.json'),
                   TextFormField(
-                    decoration: InputDecoration(
+                    controller: c,
+                     decoration: InputDecoration(
                         label: Text("Email"),
 
                         hintText: "example@domain.com",
@@ -91,8 +95,8 @@ class _RigistrationState extends State<Rigistration> {
                   ),
                   ElevatedButton(onPressed:(){
                     if(formkey.currentState!.validate());
-                   Navigator.of(context).pushNamed('routescren2');
-
+//Navigator.of(context).pushNamed('routeScreen2',arguments: c);
+                 Navigator.of(context).pushNamed('routeScreen',arguments: c.text);
 
                   } , child:Text('Login') ),
                 ],
